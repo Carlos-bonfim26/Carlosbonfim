@@ -11,6 +11,9 @@ import { SiPhp } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiInsomnia } from "react-icons/si";
+
 import '../animation.css'
 const Skills = forwardRef((props, ref) => {
   const habilidades = [
@@ -45,6 +48,11 @@ const Skills = forwardRef((props, ref) => {
       progress: 70,
     },
     {
+      name: "Node.js",
+      icon: <FaNodeJs />,
+      progress: 50,
+    },
+    {
       name: "Java",
       icon: <FaJava />,
       progress: 50,
@@ -68,6 +76,11 @@ const Skills = forwardRef((props, ref) => {
       name: "Git e Github",
       icon: <FaGitAlt />,
       progress: 70,
+    },
+    {
+      name: "Insomnia",
+      icon: <SiInsomnia />,
+      progress: 50,
     },
   ];
   return (
