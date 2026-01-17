@@ -1,7 +1,7 @@
 import React, { forwardRef, useRef, useState } from "react";
 import "../App.css";
 import "../animation.css";
-import Accordion from "../components/Accordion";
+import Accordion from "../Components/Accordion";
 const Demoday = forwardRef((props, ref) => {
   const accordionItems = [
     {
