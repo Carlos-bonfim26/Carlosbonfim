@@ -1,76 +1,36 @@
 import React, { forwardRef, useRef, useState } from "react";
 import "../App.css";
 import "../animation.css";
-import img from "../img/team.png";
+import Accordion from "../components/Accordion";
 const Demoday = forwardRef((props, ref) => {
-  const [btnLearn, setBtnLearn] = useState("Ler Mais");
-  const [btnClicked, setBtnClicked] = useState(false);
-  const paragrafosRef = useRef(null);
-  const handleLearnMore = () => {
-    if(!paragrafosRef.current) return;
-    setBtnClicked(!btnClicked);
-    const paragrafos = paragrafosRef.current.querySelectorAll("p");
-    if (btnClicked) {
-      setBtnLearn("Ler Mais");
-      paragrafos[2].style.display = "none";
-      paragrafos[3].style.display= "none";
-    } else {
-      setBtnLearn("Ler Menos");
-       paragrafos[2].style.display = "Flex";
-      paragrafos[3].style.display= "Flex";
-    }
-  };
+  const accordionItems = [
+    {
+      header: "Saboria",
+      content:
+        "A Saboria é um plataforma que visa incluir as pessoas com restrições alimentares no cardapio dos restaurantes brasileiros, trazendo um site que localiza esses lugares e indica para o seu usuário, facilitando a conturbada busca por restaurantes que possam atender suas necessidades.",
+    },
+    {
+      header: "Sistema de autenticação de Usuário",
+      content:
+        "O sistema de autenticação criado pode cadastrar usuários no banco de dados e poder dar acesso ou não a esses usuários quando tentarem acessar, dependendo se já está cadastrado e se digitou sua senha de forma correta no momento do login.",
+    },
+    {
+      header: "Olho no Boleto",
+      content:
+        "A OlhoNoBoleto API é uma solução RESTful desenvolvida em Java com Spring Boot para validação segura de boletos bancários e códigos QR do Pix. A API analisa dados de pagamentos, consulta fontes externas e verifica histórico de denúncias para identificar possíveis fraudes.",
+    },
+    {
+      header: "Gerador de imagem com IA",
+      content:
+        "O Gerador de Imagem com IA é uma ferramenta que permite criar imagens a partir de descrições textuais, utilizando tecnologia de aprendizado profundo para transformar palavras em visuais.",
+    },
+  ];
   return (
-    <div className="container-demoday autoShow" ref={ref}>
-      <div className="enfeite">
-        <div className="rectangle-border"></div>
-        <div className="line"></div>
-        <div className="circle"></div>
-      </div>
-      <div className="text-demoday">
-        <h2>
-          Projeto <span>Demoday</span>
-        </h2>
-        <div className="paragrafosDemoday" ref={paragrafosRef}>
-          <p>
-            Durante minha formação como Desenvolvedor Full Stack no Instituto
-            PROA, participei da criação da Saboria, uma startup fictícia voltada
-            para área alimenticia com o proposíto de ser uma plataforma de
-            restaurantes focados em pessoas que sofrem de restrições
-            alimentares. O projeto foi desenvolvido por mim e meu grupo como
-            trabalho final do curso e apresentado no DemoDay, evento que simula
-            um pitch real de startup para o mercado.
-          </p>
-          <p>
-            Na Saboria, atuei com destaque na área de Desenvolvimento Front-End,
-            utilizando React, JavaScript, HTML e CSS para criar interfaces
-            modernas, acessíveis e responsivas. Além disso, também contribuí com
-            a equipe de Back-End criando os filtros de busca na página,
-            organização do repositório no GitHub e padronização de código em
-            equipe.
-          </p>
-          <p>
-            Fui um dos responsáveis por garantir a melhor experiência visual e
-            funcional do site, aplicando princípios de UI/UX Design e boas
-            práticas de versionamento. Trabalhei com metodologias ágeis e
-            colaborei ativamente na construção da apresentação final do projeto,
-            demonstrando habilidades técnicas e comportamentais essenciais para
-            o mercado.
-          </p>
-          <p>
-            Apresentar a Saboria no DemoDay foi um marco importante da minha
-            trajetória, pois pude aplicar meus conhecimentos em um ambiente
-            colaborativo, com foco em qualidade, inovação e entrega real.
-          </p>
-        </div>
-        <button className="learnMode" onClick={handleLearnMore}>
-          {btnLearn}
-        </button>
-      </div>
-      <div className="img-demoday">
-        <img src={img} alt="time da Saboria" className="imageReveal" />
-        <div className="rectangle-border"></div>
-      </div>
+    <div className="container-accordion" ref={ref}>
+      <h2>
+        Principais <span>Projetos</span>
+      </h2>
+      <Accordion items={accordionItems} />
     </div>
   );
 });
