@@ -1,0 +1,101 @@
+footer{
+    background: linear-gradient(#1C1D22, #190425, #3E095D, #7011A7);
+}
+.contact {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.3rem;
+  font-family: "Audiowide", sans-serif;
+}
+.contact h2 {
+  text-align: center;
+}
+.container-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-contact .contact-img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container-contact .contact-img > img {
+  object-fit: cover;
+  width: 100%;
+}
+.container-contact .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: start;
+}
+.container-contact .links a:first-child {
+  font-size: 3.2rem;
+}
+.container-contact .links a:nth-child(2) {
+  font-size: 2.5rem;
+}
+.container-contact .links a:nth-child(3) {
+  font-size: 2.8rem;
+}
+.container-contact .links .button-cv button {
+  width: 8rem;
+  height: 2rem;
+  background-color: var(--details1);
+  color: var(--text-color);
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.container-contact .links .button-cv button:hover {
+  box-shadow: 0rem 0rem 1rem 0rem rgba(255, 255, 255, 0.2);
+}
+.container-contact .links a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.4s ease-in-out;
+}
+.container-contact .links a:hover {
+  scale: 1.1;
+  color: var(--details1);
+}
+@media (max-width: 1068px) {
+  .container-contact .links a:first-child {
+    font-size: 3rem;
+  }
+  .container-contact .links a:nth-child(2) {
+    font-size: 2.3rem;
+  }
+  .container-contact .links a:nth-child(3) {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 915px) {
+  .container-contact .contact-img img {
+    height: 15rem;
+  }
+  .container-contact .links a:first-child {
+    font-size: 2.6rem;
+  }
+  .container-contact .links a:nth-child(2) {
+    font-size: 1.9rem;
+  }
+  .container-contact .links a:nth-child(3) {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container-contact .links a:first-child {
+    font-size: 2.3rem;
+  }
+  .container-contact .links a:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .container-contact .links a:nth-child(3) {
+    font-size: 2rem;
+  }
+}
