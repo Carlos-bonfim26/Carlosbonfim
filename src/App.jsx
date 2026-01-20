@@ -26,22 +26,22 @@ function App() {
 
   return (
     <>
-      <Header
-        onScrollToSobre={() => scrollToSection(sobreRef)}
-        onScrollToHabilidades={() => scrollToSection(habilidadesRef)}
-        onScrollToDemoday={() => scrollToSection(demodayRef)}
-        onScrollToProjetos={() => scrollToSection(projetosRef)}
-        onScrollToContato={() => scrollToSection(contatoRef)}
-        onScrollToCertificado={() => scrollToSection(certificadoRef)}
-      />
-      <Home />
-      <AboutMe ref={sobreRef} />
-      <Skills ref={habilidadesRef} />
-      <Certificado ref={certificadoRef}/>
-      <Demoday ref={demodayRef} />
-      {/* <MainProjects ref={projetosRef} /> */}
-      <Contact ref={contatoRef} />
-      <Footer />
+        <Header
+          onScrollToSobre={() => scrollToSection(sobreRef)}
+          onScrollToHabilidades={() => scrollToSection(habilidadesRef)}
+          onScrollToDemoday={() => scrollToSection(demodayRef)}
+          onScrollToProjetos={() => scrollToSection(projetosRef)}
+          onScrollToContato={() => scrollToSection(contatoRef)}
+          onScrollToCertificado={() => scrollToSection(certificadoRef)}
+        />
+        <Home />
+        <AboutMe ref={sobreRef} />
+        <Skills ref={habilidadesRef} />
+        <Certificado ref={certificadoRef}/>
+        <Demoday ref={demodayRef} />
+        {/* <MainProjects ref={projetosRef} /> */}
+        {/* <Contact ref={contatoRef} /> */}
+      <Footer ref={contatoRef}/>
     </>
   );
 }
