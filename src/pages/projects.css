@@ -1,0 +1,109 @@
+/* ===== CONTAINER DO SWIPER ===== */
+.swiper {
+  height: 430px;
+  overflow: hidden;         
+  padding: 0 120px;         
+}
+
+/* ===== SLIDE ===== */
+.swiper-slide {
+  width: 500px;            
+  height: 370px;
+  border-radius: 1.2rem;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.85);
+  opacity: 0.45;
+}
+
+/* ===== SLIDE ATIVO ===== */
+.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* ===== SLIDES LATERAIS ===== */
+.swiper-slide-prev,
+.swiper-slide-next {
+  z-index: 1;
+}
+
+/* ===== CONTEÚDO INTERNO ===== */
+.slide-project {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.2)
+  );
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* ===== MOSTRA CONTEÚDO SÓ NO ATIVO ===== */
+.swiper-slide-active .slide-project {
+  opacity: 1;
+}
+
+/* ===== TÍTULO ===== */
+.slide-project h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* ===== BOTÃO ===== */
+.slide-project a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.slide-project a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== PAGINAÇÃO ===== */
+.swiper-pagination {
+  bottom: 1.5rem !important;
+  transform: scale(1.2);
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .swiper {
+    padding: 0 1rem;
+    height: 340px;
+  }
+
+  .swiper-slide {
+    width: 280px;
+    height: 260px;
+  }
+
+  .slide-project h2 {
+    font-size: 1.3rem;
+  }
+
+  .slide-project a {
+    padding: 0.3rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
