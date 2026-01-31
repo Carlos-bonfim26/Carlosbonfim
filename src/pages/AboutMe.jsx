@@ -37,19 +37,36 @@ const AboutMe = forwardRef((props, ref) => {
           Quem <span>Sou?</span>
         </h2>
         <p>
-          Olá, me chamo Carlos Bonfim, sou estudante da Universidade Anhembi
-          Morumbi, cursando análise e desenvolvimento de sistemas, entrei na
-          faculdade em 2024 com bolsa integral, comecei na área da programação
-          em 2023 cursando desenvolvimento web, onde me apaixonei por criar
-          páginas e pela lógica de programação, pela sua complexidade e diversas
-          soluções, o que torna desafiador e interessante a área, como
-          conquistas além dos projetos e certificações já feitas em 2022 eu tive
-          a honra de representar minha sala no evento de melhores TCC’s no palco
-          da Totvs e em 2024 ganhei o prêmio de aluno destaque enquanto fui
-          estudante do Instituto Proa, atualmente venho estudando bastante para
-          desenvolvimento web, mas tenho interesse em outras áreas também,
-          convido você a continuar scrollando meu portfólio e descobrir tudo que
-          eu já fiz na minha carreira como programador.
+          Olá, me chamo Carlos Bonfim e atualmente atuo como Aprendiz em
+          Observabilidade na XP Inc., a maior corretora de investimentos do
+          país. Nessa função, trabalho com monitoramento de servidores e
+          aplicações, realizando a criação e ajuste de alertas no Dynatrace,
+          além do desenvolvimento de datasources e visualizações no Grafana,
+          contribuindo diretamente para a estabilidade e confiabilidade dos
+          sistemas.
+        </p>
+        <p>
+          Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade
+          Anhembi Morumbi, onde ingressei em 2024 com bolsa integral. Meu
+          interesse pela área de tecnologia começou em 2023, quando iniciei meus
+          estudos em Desenvolvimento Web. Desde então, me apaixonei pela
+          construção de interfaces, pela lógica de programação e pela
+          complexidade envolvida na resolução de problemas, fatores que tornam a
+          área desafiadora e extremamente estimulante para mim.
+        </p>
+        <p>
+          Ao longo da minha trajetória, conquistei experiências e
+          reconhecimentos importantes. Em 2022, tive a honra de representar
+          minha turma no evento de melhores TCCs, apresentando no palco da
+          TOTVS. Já em 2024, fui reconhecido como aluno destaque durante minha
+          formação no Instituto PROA, onde desenvolvi não apenas habilidades
+          técnicas, mas também competências interpessoais fundamentais para o
+          mercado.
+        </p>
+        <p>
+          Convido você a continuar navegando para conhecer minhas habilidades
+          técnicas, projetos desenvolvidos e minha evolução profissional ao
+          longo da carreira.
         </p>
         <div className="rectangle"></div>
       </div>

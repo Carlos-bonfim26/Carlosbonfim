@@ -13,6 +13,7 @@ import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiInsomnia } from "react-icons/si";
+import { SiDynatrace } from "react-icons/si";
 
 import '../animation.css'
 const Skills = forwardRef((props, ref) => {
@@ -81,6 +82,11 @@ const Skills = forwardRef((props, ref) => {
       name: "Insomnia",
       icon: <SiInsomnia />,
       progress: 50,
+    },
+    {
+      name: "Dynatrace",
+      icon: <SiDynatrace />,
+      progress: 40,
     },
   ];
   return (
