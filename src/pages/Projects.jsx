@@ -9,6 +9,7 @@ import compilotecaImg from "../img/compiloteca2.png";
 import javaProject from "../img/projetoJava.png";
 import desenho from "../img/desenho.png";
 import geradorIA from "../img/geradorImgIA.png";
+import olhoNoBoleto from '../img/olhoNoBoleto.png'
 import quiz from "../img/quiz.png";
 import chatbot from "../img/chatbot.png";
 const project = [
@@ -22,8 +23,13 @@ const project = [
     img: geradorIA,
     github: "https://github.com/Carlos-bonfim26/gerador-de-imagem-IA",
   },
+    {
+    name: "Olho no Boleto",
+    img: olhoNoBoleto,
+    github: "https://github.com/Carlos-bonfim26/OlhoNoBoleto-API",
+  },
   {
-    name: "chatbot com Gemini",
+    name: "Olho no Boleto",
     img: chatbot,
     github: "https://github.com/Carlos-bonfim26/ChatBot_JS",
   },
