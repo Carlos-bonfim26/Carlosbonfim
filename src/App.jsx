@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Certificado from "./pages/Certificado";
-
+import Projects from "./pages/Projects";        
 function App() {
   const sobreRef = useRef(null);
   const habilidadesRef = useRef(null);
@@ -38,6 +38,7 @@ function App() {
         <AboutMe ref={sobreRef} />
         <Skills ref={habilidadesRef} />
         <Certificado ref={certificadoRef}/>
+        <Projects ref={projetosRef}/>
         <Demoday ref={demodayRef} />
         {/* <MainProjects ref={projetosRef} /> */}
         {/* <Contact ref={contatoRef} /> */}

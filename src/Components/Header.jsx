@@ -36,9 +36,6 @@ const Header = ({
                 <Nav.Link onClick={onScrollToCertificado}>Certificados</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link onClick={onScrollToDemoday}>Demoday</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
                 <Nav.Link onClick={onScrollToProjetos}>Projetos</Nav.Link>
               </Nav.Item>
               <Nav.Item>
