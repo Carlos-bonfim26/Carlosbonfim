@@ -39,9 +39,7 @@ function App() {
         <Skills ref={habilidadesRef} />
         <Certificado ref={certificadoRef}/>
         <Projects ref={projetosRef}/>
-        <Demoday ref={demodayRef} />
-        {/* <MainProjects ref={projetosRef} /> */}
-        {/* <Contact ref={contatoRef} /> */}
+
       <Footer ref={contatoRef}/>
     </>
   );

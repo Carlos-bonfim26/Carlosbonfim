@@ -29,7 +29,7 @@ const project = [
     github: "https://github.com/Carlos-bonfim26/OlhoNoBoleto-API",
   },
   {
-    name: "Olho no Boleto",
+    name: "Chatbot",
     img: chatbot,
     github: "https://github.com/Carlos-bonfim26/ChatBot_JS",
   },
