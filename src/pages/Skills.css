@@ -65,9 +65,19 @@
 }
 @media (width <550px) {
   .container-skills {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .skill {
-    width: 18rem;
+    width: 4rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .skill .progress-bar, .skill h3, .skill span{
+    display: none;
+  }
+}
+@media (width <310px){
+   .container-skills {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
